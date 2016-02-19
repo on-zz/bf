@@ -12,12 +12,10 @@ jQuery(function($){
 
 	var addFaucet = function( index, cell, seconds, measure ) {
 	    faucets[index] = {state: 0, period: seconds, cell: cell, measure: measure};
-	    console.log("Add: " + index + ", " + seconds + ", measure = ", measure)
 	};
 
 	var startFaucetTimer = function( index ) {
 	    var faucet = faucets[index];
-	    console.log("Start timer for " + index + ". State = " + faucet.state)
 	    if( faucet.state != 1 ) {
 	        faucet.state = 1;
 	        faucet.left = faucet.period;
