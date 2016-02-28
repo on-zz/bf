@@ -1,6 +1,6 @@
 jQuery(function($){
 	var cellActive = function(el) {
-		el.parent().css('background-color', '#D49B90');
+		el.parent().css('background-color', '#F772D4');
 	};
 
 	var cellInactive = function(el) {
